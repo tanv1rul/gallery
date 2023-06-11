@@ -1,0 +1,69 @@
+/* common css start */
+*{ margin: 0; padding: 0; }
+/* ===== Scrollbar CSS ===== */
+    /* Firefox */
+* {
+    scrollbar-width: none;
+    scrollbar-color: #8f54a0 #ffffff;
+}
+
+    /* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ffffff00;
+    border-radius: 10px;
+    border: 3px solid #ffffff00;
+}
+/* ===== Scrollbar CSS End ===== */
+
+ul, ol{ list-style: none; }
+a{ text-decoration: none;}
+html, body{
+    background: #282a36;
+    color: #f8f8f2;
+}
+@font-face { font-family: "heading"; src: url(../fonts/EBGaramondSC.otf);}
+/* common css end */
+
+
+/* heading css start */
+.heading{
+    text-align: center;
+}
+
+.heading h1{
+    font-family: "heading";
+    font-weight: 400;
+    margin: 30px 0 30px 0;
+}
+/* heading css end */
+
+/* gallery css start */
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery .img img{
+    display: block;
+    height: 30vh;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 15px 0px rgba(0,0,0,0.57);
+    -webkit-box-shadow: 1px 2px 15px 0px rgba(0,0,0,0.57);
+    -moz-box-shadow: 1px 2px 15px 0px rgba(0,0,0,0.57);
+    transition: 0.4s;
+}
+
+.gallery .img img:hover{
+    transform: scale(1.1);
+}
+/* gallery css end */
